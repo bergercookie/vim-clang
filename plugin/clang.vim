@@ -895,7 +895,7 @@ func! s:ClangCompleteDatabase()
 
     call s:PDebug("s:ClangCompleteInit::database", l:ccd)
     if filereadable(l:ccd)
-python << endpython
+python3 << endpython
 import vim
 import re
 import json
